@@ -22,25 +22,14 @@
 
 
   <!-- Le styles -->
-  <script src="http://nbviewer.jupyter.org/cdn-cgi/apps/head/MuIIl4I_IVFkxldaVu1mdWee9as.js"></script><link href="http://nbviewer.jupyter.org/static/build/styles.css?v=d2f574aebb7720ccb35207ba1db4cfbb" rel="stylesheet">
+  <script src="/nbviewer.jupyter.org/cdn-cgi/apps/head/MuIIl4I_IVFkxldaVu1mdWee9as.js"></script><link href="/nbviewer.jupyter.org/static/build/styles.css" rel="stylesheet">
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <!-- Le fav and touch icons -->
-  <link rel="shortcut icon" href="http://nbviewer.jupyter.org/static/ico/ipynb_icon_16x16.png">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144"
-        href="http://nbviewer.jupyter.org/static/ico/apple-touch-icon-144-precomposed.png?v=5a3c9ede93e2a8b8ea9e3f8f3da1a905">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114"
-        href="http://nbviewer.jupyter.org/static/ico/apple-touch-icon-114-precomposed.png?v=45d86fc8f24dc00638035e1dd7a6d898">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72"
-        href="http://nbviewer.jupyter.org/static/ico/apple-touch-icon-72-precomposed.png?v=540b5eb0f3cfd25f1439d1c9bd30e15f">
-  <link rel="apple-touch-icon-precomposed"
-        href="http://nbviewer.jupyter.org/static/ico/apple-touch-icon-57-precomposed.png?v=225f0590e187e1458625654f10a28f56">
-
-    <link href="http://nbviewer.jupyter.org/static/build/notebook.css?v=7ff1df8ccee6dd13babbd66843869949" rel="stylesheet">
+    <link href="/nbviewer.jupyter.org/static/build/notebook.css" rel="stylesheet">
 
 
 
@@ -82,12 +71,6 @@
 
 <body class="nbviewer">
 
-  <!-- These are loaded at the top of the body so they are available to
-       notebook cells when they are loaded below. -->
-  <script src="http://nbviewer.jupyter.org/static/components/jquery/dist/jquery.min.js?v=c9f5aeeca3ad37bf2aa006139b935f0a"></script>
-  <script src="http://nbviewer.jupyter.org/static/components/requirejs/require.js?v=6da8be361b9ee26c5e721e76c6d4afce"></script>
-  <script src="http://nbviewer.jupyter.org/static/components/moment/min/moment.min.js?v=89f87298ad94aa1e6b92f42eb66da043"></script>
-
   <div class="container container-main">
 
 
@@ -97,14 +80,14 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="EE-371K-Data-Science-Laboratory-final-report"><p style="text-align: center;">EE 379K Data Science Laboratory final report</p><a class="anchor-link" href="#EE-371K-Data-Science-Laboratory-final-report">&#182;</a></h1><h2 id="Favorita-Grocery-Sales-Forecasting"><p style="text-align: center;">Favorita Grocery Sales Forecasting</p><a class="anchor-link" href="#Favorita-Grocery-Sales-Forecasting">&#182;</a></h2><h2 id="Fenglong-Cai-|-Kyle-Bradford--|-Spencer-Yue-|-Yiming-Liao"><p style="text-align: center;">Fenglong Cai | Kyle Bradford  | Spencer Yue | Yiming Liao</p><a class="anchor-link" href="#Fenglong-Cai-|-Kyle-Bradford--|-Spencer-Yue-|-Yiming-Liao">&#182;</a></h2>
+<h1><p style="text-align: center;">EE 379K Data Science Laboratory final report</p><a class="anchor-link" href="#EE-371K-Data-Science-Laboratory-final-report">&#182;</a></h1><h2><p style="text-align: center;">Favorita Grocery Sales Forecasting</p><a class="anchor-link" href="#Favorita-Grocery-Sales-Forecasting">&#182;</a></h2><h2><p style="text-align: center;">Fenglong Cai | Kyle Bradford  | Spencer Yue | Yiming Liao</p><a class="anchor-link" href="#Fenglong-Cai-|-Kyle-Bradford--|-Spencer-Yue-|-Yiming-Liao">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Introduction">1. Introduction<a class="anchor-link" href="#1.-Introduction">&#182;</a></h3><p>Brick-and-mortar grocery stores are always in a delicate dance with purchasing and sales forecasting. Predict a little over, and grocers are stuck with overstocked, perishable goods. Guess a little under, and popular items quickly sell out, leaving money on the table and customers fuming.</p>
+<h3>1. Introduction<a class="anchor-link" href="#1.-Introduction">&#182;</a></h3><p>Brick-and-mortar grocery stores are always in a delicate dance with purchasing and sales forecasting. Predict a little over, and grocers are stuck with overstocked, perishable goods. Guess a little under, and popular items quickly sell out, leaving money on the table and customers fuming.</p>
 <p>Our project，which is based on the ongoing kaggle competition, is aim to predict the unit sales for thousands of items sold at different Favorita stores located in Ecuador. If we can build a model that more accurately forecasts product sales, we can better ensure the grocery stores please customers by having just enough of the right products at the right time.</p>
 
 </div>
@@ -113,7 +96,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.-Data-Analysis">2. Data Analysis<a class="anchor-link" href="#2.-Data-Analysis">&#182;</a></h3><p>Below is the structure of our data.We have six data file contains information from three dimension: store, item and date.</p>
+<h3>2. Data Analysis<a class="anchor-link" href="#2.-Data-Analysis">&#182;</a></h3><p>Below is the structure of our data.We have six data file contains information from three dimension: store, item and date.</p>
 <p><img src="https://favorita-ee379k.github.io/MA_graph/data_structure.png"
 style="width:500px;height:310px;float"></p>
 <p>Training data includes the target unit_sales by date, store_nbr, and item_nbr.From the stores' number, items' number and date we can find supplementary information，such as store location，item class and oil price，from other data file.The supplementary information that may be useful in building your models.</p>
@@ -136,7 +119,7 @@ style="width:400px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Moving-Average">Moving Average<a class="anchor-link" href="#Moving-Average">&#182;</a></h3>
+<h3>Moving Average<a class="anchor-link" href="#Moving-Average">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -174,14 +157,14 @@ style="width:500px;height:310px;float"></p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h1 id="Autoregression">Autoregression<a class="anchor-link" href="#Autoregression">&#182;</a></h1>
+<h1>Autoregression<a class="anchor-link" href="#Autoregression">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Baseline-AR">Baseline AR<a class="anchor-link" href="#Baseline-AR">&#182;</a></h2>
+<h2>Baseline AR<a class="anchor-link" href="#Baseline-AR">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -196,7 +179,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Some-prediction-results-compared-to-the-truth:">Some prediction results compared to the truth:<a class="anchor-link" href="#Some-prediction-results-compared-to-the-truth:">&#182;</a></h3>
+<h3>Some prediction results compared to the truth:<a class="anchor-link" href="#Some-prediction-results-compared-to-the-truth:">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -219,7 +202,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Multi-Level-AR">Multi-Level AR<a class="anchor-link" href="#Multi-Level-AR">&#182;</a></h2>
+<h2>Multi-Level AR<a class="anchor-link" href="#Multi-Level-AR">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -234,7 +217,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Some-sales-totals-for-stores">Some sales totals for stores<a class="anchor-link" href="#Some-sales-totals-for-stores">&#182;</a></h3>
+<h3>Some sales totals for stores<a class="anchor-link" href="#Some-sales-totals-for-stores">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -249,7 +232,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Some-sales-totals-for-items">Some sales totals for items<a class="anchor-link" href="#Some-sales-totals-for-items">&#182;</a></h3>
+<h3>Some sales totals for items<a class="anchor-link" href="#Some-sales-totals-for-items">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -273,7 +256,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Example-of-the-data-available-for-each-item">Example of the data available for each item<a class="anchor-link" href="#Example-of-the-data-available-for-each-item">&#182;</a></h4>
+<h4>Example of the data available for each item<a class="anchor-link" href="#Example-of-the-data-available-for-each-item">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -302,7 +285,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dataset-1:-Some-unit-sales-per-store-predictions">Dataset 1: Some unit sales per store predictions<a class="anchor-link" href="#Dataset-1:-Some-unit-sales-per-store-predictions">&#182;</a></h3>
+<h3>Dataset 1: Some unit sales per store predictions<a class="anchor-link" href="#Dataset-1:-Some-unit-sales-per-store-predictions">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -325,7 +308,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dataset-2:-Some-predictions-for-family-proportion-of-store-sales-or-$\frac{family\_sales}{store\_sales}$">Dataset 2: Some predictions for family proportion of store sales or $\frac{family\_sales}{store\_sales}$<a class="anchor-link" href="#Dataset-2:-Some-predictions-for-family-proportion-of-store-sales-or-$\frac{family\_sales}{store\_sales}$">&#182;</a></h3>
+<h3>Dataset 2: Some predictions for family proportion of store sales or $\frac{family\_sales}{store\_sales}$<a class="anchor-link" href="#Dataset-2:-Some-predictions-for-family-proportion-of-store-sales-or-$\frac{family\_sales}{store\_sales}$">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -340,7 +323,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dataset-3:-Some-predictions-for-class-proportion-of-family-sales-or-$\frac{class\_sales}{family\_sales}$">Dataset 3: Some predictions for class proportion of family sales or $\frac{class\_sales}{family\_sales}$<a class="anchor-link" href="#Dataset-3:-Some-predictions-for-class-proportion-of-family-sales-or-$\frac{class\_sales}{family\_sales}$">&#182;</a></h3>
+<h3>Dataset 3: Some predictions for class proportion of family sales or $\frac{class\_sales}{family\_sales}$<a class="anchor-link" href="#Dataset-3:-Some-predictions-for-class-proportion-of-family-sales-or-$\frac{class\_sales}{family\_sales}$">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -355,7 +338,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dataset-4:-Some-predictions-of-item-proportion-of-class-sales-or-$\frac{item\_sales}{class\_sales}$">Dataset 4: Some predictions of item proportion of class sales or $\frac{item\_sales}{class\_sales}$<a class="anchor-link" href="#Dataset-4:-Some-predictions-of-item-proportion-of-class-sales-or-$\frac{item\_sales}{class\_sales}$">&#182;</a></h3>
+<h3>Dataset 4: Some predictions of item proportion of class sales or $\frac{item\_sales}{class\_sales}$<a class="anchor-link" href="#Dataset-4:-Some-predictions-of-item-proportion-of-class-sales-or-$\frac{item\_sales}{class\_sales}$">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -370,7 +353,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Putting-it-all-together:">Putting it all together:<a class="anchor-link" href="#Putting-it-all-together:">&#182;</a></h3>
+<h3>Putting it all together:<a class="anchor-link" href="#Putting-it-all-together:">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -385,7 +368,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Some-unit-sales-predictions">Some unit sales predictions<a class="anchor-link" href="#Some-unit-sales-predictions">&#182;</a></h3>
+<h3>Some unit sales predictions<a class="anchor-link" href="#Some-unit-sales-predictions">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -408,7 +391,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comparing-the-two-models-(error-per-sample-over-16-day-prediction-period)">Comparing the two models (error per sample over 16 day prediction period)<a class="anchor-link" href="#Comparing-the-two-models-(error-per-sample-over-16-day-prediction-period)">&#182;</a></h3>
+<h3>Comparing the two models (error per sample over 16 day prediction period)<a class="anchor-link" href="#Comparing-the-two-models-(error-per-sample-over-16-day-prediction-period)">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -439,14 +422,14 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Can-we-combine-the-best-predictions-from-both-to-get-a-better-prediction?">Can we combine the best predictions from both to get a better prediction?<a class="anchor-link" href="#Can-we-combine-the-best-predictions-from-both-to-get-a-better-prediction?">&#182;</a></h3>
+<h3>Can we combine the best predictions from both to get a better prediction?<a class="anchor-link" href="#Can-we-combine-the-best-predictions-from-both-to-get-a-better-prediction?">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comparing-average-error-per-store-difference">Comparing average error per store difference<a class="anchor-link" href="#Comparing-average-error-per-store-difference">&#182;</a></h3>
+<h3>Comparing average error per store difference<a class="anchor-link" href="#Comparing-average-error-per-store-difference">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -461,7 +444,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comparing-average-error-per-item-difference">Comparing average error per item difference<a class="anchor-link" href="#Comparing-average-error-per-item-difference">&#182;</a></h3>
+<h3>Comparing average error per item difference<a class="anchor-link" href="#Comparing-average-error-per-item-difference">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -492,7 +475,7 @@ style="width:500px;height:310px;float"></p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Conclusion-for-autoregression">Conclusion for autoregression<a class="anchor-link" href="#Conclusion-for-autoregression">&#182;</a></h3>
+<h3>Conclusion for autoregression<a class="anchor-link" href="#Conclusion-for-autoregression">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -508,15 +491,15 @@ style="width:500px;height:310px;float"></p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h1 id="Machine-Learning-Method">Machine Learning Method<a class="anchor-link" href="#Machine-Learning-Method">&#182;</a></h1><p>All the models above can handle the time feature well, but cannot insert all those categorical features. In order to do that, we come to machine learning method for help. When applying those method, feature engineering and computation speed becomes extremely important.</p>
-<h3 id="1.-First-Try">1. First Try<a class="anchor-link" href="#1.-First-Try">&#182;</a></h3><p>Handling time series in traditional mathine learning method is rather tricky. We first dummy the date into year, month, the number of the week as well as weekday, and feed all the unit sale data into the models from 20160801 to 20170815. Besides, we dummy all the categorical features such as the state, city, store type and cluster and use them as new features. The model we've tired in this part including Random Forest, Bagging, XGBoost as well as MLP. The plot below descirbes the feature performance.</p>
+<h1>Machine Learning Method<a class="anchor-link" href="#Machine-Learning-Method">&#182;</a></h1><p>All the models above can handle the time feature well, but cannot insert all those categorical features. In order to do that, we come to machine learning method for help. When applying those method, feature engineering and computation speed becomes extremely important.</p>
+<h3>1. First Try<a class="anchor-link" href="#1.-First-Try">&#182;</a></h3><p>Handling time series in traditional mathine learning method is rather tricky. We first dummy the date into year, month, the number of the week as well as weekday, and feed all the unit sale data into the models from 20160801 to 20170815. Besides, we dummy all the categorical features such as the state, city, store type and cluster and use them as new features. The model we've tired in this part including Random Forest, Bagging, XGBoost as well as MLP. The plot below descirbes the feature performance.</p>
 <p><img src="https://favorita-ee379k.github.io/MLgraph/performance.png" alt="performance"></p>
 <p>From the picture, we can see that XGBoost is still the best among the four machine learning models but they all get a score of more than 1, twice as large as the Moving Average's score and even larger than the last year model. The poor performance is because of the feature enginnering we made was not good. The date itself does not contain enough information, and feeding all the raw time series data will lead to overfitting. Besides, these four models need a huge amount of time to tune and train given the amount of training data. We need to find a faster model first before further feature Engineering.</p>
-<h3 id="2.-LGBM-is-faster">2. LGBM is faster<a class="anchor-link" href="#2.-LGBM-is-faster">&#182;</a></h3><p>LGBM is short for Light Gradient Boosting Method. Different from other boosing methods, this model splits the trees leaf-wise instead of level-wise, this allows LGBM to minimise loss faster and thus gain more computation speed. The pictures below describes the concept well.</p>
+<h3>2. LGBM is faster<a class="anchor-link" href="#2.-LGBM-is-faster">&#182;</a></h3><p>LGBM is short for Light Gradient Boosting Method. Different from other boosing methods, this model splits the trees leaf-wise instead of level-wise, this allows LGBM to minimise loss faster and thus gain more computation speed. The pictures below describes the concept well.</p>
 <p><img src="https://favorita-ee379k.github.io/MLgraph/leaf-wise.png" alt="leaf-wise">
 <img src="https://favorita-ee379k.github.io/MLgraph/level-wise.png" alt="level-wise"></p>
 <p>With the help of LGBM, we get more time and more patience to do more feature engineering.</p>
-<h3 id="3.-Feature-Engineering">3. Feature Engineering<a class="anchor-link" href="#3.-Feature-Engineering">&#182;</a></h3><p>With the inspiration of moving average and smoothing method, we begin to view time series as a combination of trend, seasonality and noise. We want to capture the trend and seasonality instead of noise. First, for the trend, we calculate the average unit sales of each item in a certain store. The time period we used was firstly 7 days, 14 days, 28 days as well as 56 days, since this will capture the weekly mean as well as monthly trend. But after we did a FFT on the data we also discovered a period of 2 days and 3 days, so we add the 2-day mean and 3-day mean into our model too. We use these moving-average features to predict the following 16 days since the task is to predict the last 16 days' sale in August. In that way we capture the trend well. Next, to capture the seasonality, the 16 days of training data all begins on Wednesday, the same with the first day of the test set. We fit 16 LGBM model individually to the 16 days in our prepared training dataset. In this way we capture the short term seasonality well. However, in this way, our model only used the most information of 16 days and a small amount of information of 56 days. The way we use information is still insufficient. In order to cope with that, we created 4 training sets, begining at 6.28, 7.5, 7.12 and 7.19. For the yearly trend, we just ignored it, for we tried the same thing on 2016 and 2017 but after ensemble them the result got worse.</p>
+<h3>3. Feature Engineering<a class="anchor-link" href="#3.-Feature-Engineering">&#182;</a></h3><p>With the inspiration of moving average and smoothing method, we begin to view time series as a combination of trend, seasonality and noise. We want to capture the trend and seasonality instead of noise. First, for the trend, we calculate the average unit sales of each item in a certain store. The time period we used was firstly 7 days, 14 days, 28 days as well as 56 days, since this will capture the weekly mean as well as monthly trend. But after we did a FFT on the data we also discovered a period of 2 days and 3 days, so we add the 2-day mean and 3-day mean into our model too. We use these moving-average features to predict the following 16 days since the task is to predict the last 16 days' sale in August. In that way we capture the trend well. Next, to capture the seasonality, the 16 days of training data all begins on Wednesday, the same with the first day of the test set. We fit 16 LGBM model individually to the 16 days in our prepared training dataset. In this way we capture the short term seasonality well. However, in this way, our model only used the most information of 16 days and a small amount of information of 56 days. The way we use information is still insufficient. In order to cope with that, we created 4 training sets, begining at 6.28, 7.5, 7.12 and 7.19. For the yearly trend, we just ignored it, for we tried the same thing on 2016 and 2017 but after ensemble them the result got worse.</p>
 <p>For transaction features, we used 7 day mean, 14 day mean and 28 day mean. For categorical features, we used store city and store cluster as well as onpromotion and amount of ompromotion in last 14 days. We also tried other features like oil price but it was total useless and ruined our result. The structure of feature engineering are shown below.</p>
 <p><img src="https://favorita-ee379k.github.io/MLgraph/feature_structure.png" alt="feature_structure"></p>
 <p>The feature importances of the first day and the last day in the training set are shown below.</p>
@@ -538,14 +521,6 @@ We can find that as the number of days goes up, 7 day mean's importance decrease
   </div>
 
   </div>
-
-
-
-
-
-  <script src="http://nbviewer.jupyter.org/static/components/bootstrap/js/bootstrap.min.js?v=5869c96cc8f19086aee625d670d741f9"></script>
-  <script src="http://nbviewer.jupyter.org/static/components/headroom.js/dist/headroom.min.js?v=b0a311ea668f8e768ea375f4a7abb81c"></script>
-  <script src="http://nbviewer.jupyter.org/static/components/headroom.js/dist/jQuery.headroom.min.js?v=f3a1bae118315d0c234afc74dc6aab71"></script>
 
 </body>
 </html>
